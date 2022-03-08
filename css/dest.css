@@ -1,5 +1,5 @@
 #dest *{
-    font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 .blockWrapper{
     display: flex;
@@ -112,7 +112,7 @@ body .title{
 }
 .infoAboutCity_p {
     display: inline-block;
-   
+   font-family: 'Oswald', sans-serif;
     color:white; 
     font-size: calc(8px + (5 + 15 * 0.7) * ((100vw - 320px) / 1620));
     text-align: justify;
@@ -127,7 +127,7 @@ body .title{
 }
 .destination__title{
     text-align: center;
-   
+   font-family: 'Oswald', sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -135,7 +135,7 @@ body .title{
 }
 .destination__decscription{
     text-align: center;
-
+font-family: 'Oswald', sans-serif;
     font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 320px) / 1620)) ;
     line-height: calc(28px + (22 +22 * 0.7) * ((100vw - 320px) / 1620)) ;
     font-weight: 600;
