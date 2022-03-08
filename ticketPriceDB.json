@@ -1,0 +1,36 @@
+{
+    "price": [
+        {
+            "title": "Italy",
+            "price": "350"
+        },
+        {
+            "title": "Georgia",
+            "price": "189"
+        },
+        {
+            "title": "Thailand",
+            "price": "500"
+        },
+        {
+            "title": "Vietnam",
+            "price": "310"
+        },
+        {
+            "title": "Turkey",
+            "price": "220"
+        },
+        {
+            "title": "Altai",
+            "price": "300"
+        },
+        {
+            "title": "Rome",
+            "price": "250"
+        },
+        {
+            "title": "Bali",
+            "price": "500"
+        }
+    ]
+}

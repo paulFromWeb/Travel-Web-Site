@@ -1,0 +1,116 @@
+.about *{
+    font-family: 'Oswald', sans-serif;
+}
+.about{
+	display: flex;
+    padding: 150px 0 0 0;
+	margin: 90px 3% 0 3%;
+}
+body .control-btn_active{
+	background:rgb(212, 169, 28);
+    display: block;
+	box-shadow: 0 0 10px rgb(212, 169, 28),
+	0 0 10px rgb(212, 169, 28),
+	0 0 20px rgb(212, 169, 28),
+	0 0 30px rgb(212, 169, 28);
+}
+.info{
+	width: 50%;
+	height: 350px;
+	padding: 3% 5% 5% 3%;
+}
+.info p:nth-child(1){
+    
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #be9d05; 
+}
+.info p:nth-child(2){
+	/* font-family: 'Oswald', sans-serif; */
+    font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 320px) / 1620));
+    line-height: 36px;
+    font-weight: 700;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+}
+.info p:nth-child(3){
+	/* font-family: 'Oswald', sans-serif; */
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    text-align: justify;
+}
+.info p:nth-child(4){
+	font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    background:rgba(0, 0, 0, 0);
+    color: #07fcb2bb;
+    border-radius:20px;
+    width: 150px;
+    height: 40px;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+}
+.video-container video{
+    margin: -40px 0 0 0;
+	width: 100%;
+	object-fit: cover;
+}
+.movie{
+	height: 80%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.control{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 0 0 0;
+    height: 20%;
+    text-align: center;
+    margin: auto;
+}
+.control-btn{
+    text-align: center;
+    background:rgb(212, 169, 28);;
+    border-radius:50%;
+    background-color:rgb(250, 249, 249);
+    cursor:pointer;
+    margin: 10% 0 0 0;
+    display: block;
+    width: calc(20px + (5 + 5 * 0.7) * ((100vw - 320px) / 1620));
+    height: calc(20px + (5 + 5 * 0.7) * ((100vw - 320px) / 1620));
+}	
+.control-btn:hover{
+	background:rgb(212, 169, 28);;
+	transition: 0.3s;
+	box-shadow: 0 0 10px rgb(212, 169, 28),
+	0 0 10px rgb(212, 169, 28),
+	0 0 20px rgb(212, 169, 28),
+	0 0 30px rgb(212, 169, 28);
+}
+body .video1{
+	margin: -215px 0 0 -70px;
+	height:600px;
+}
+.videoCont{
+	display: block;
+	width: 300px;
+	height: 100px;
+}
+.videos{
+	width: 700px;
+	height: 300px;
+}
+.newVideo1{
+	height: 350px;
+	width: 600px;
+}
+body{
+    position: relative;
+}

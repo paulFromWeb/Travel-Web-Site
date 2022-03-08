@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	ms-text-size-adjust: 100%;
+	moz-text-size-adjust: 100%;
+	webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	background:rgba(0, 0, 0, 0.98) !important;
+}
+html::-webkit-scrollbar {
+    width: 5px;
+	background:rgba(3, 3, 3, 0.959);
+}
+html::-webkit-scrollbar-thumb{
+	background:#e29b03;
+	border-radius:3px;	
+}
+body .modalOpen{
+	overflow-y: hidden !important;
+	position: static !important;
+
+	width: 100%;
+	height: 100%;
+}
+body{
+	height: 100%;
+	color: #222;
+	scrollbar-width: thin;
+    padding: 3% 0 0 0;
+    background:rgba(0, 0, 0, 0.98);
+	overflow: visible;
+} 
+
+.black{
+	display: block !important;
+	height: 30px;
+	width: 160px !important;
+	background:black !important;
+	color:white !important;
+}
+.newDiv{
+	display: none;
+	height: 100%;
+	width: 100%;
+	background:black;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+}
+.str{
+	font-size: 10px;
+	width: 30px;
+}
+
+@keyframes anim {
+ 33%{
+	border:1px solid rgb(236, 181, 0);
+	background:rgb(236, 181, 0);
+	box-shadow: 0 0 10px rgb(236, 181, 0),
+	0 0 20px rgb(236, 181, 0),
+	0 0 30px rgb(236, 181, 0),
+	0 0 40px rgb(236, 181, 0);
+	transform: scale(1.01,1.01);
+	color:white;
+ 	}
+ 38%{
+	border:1px solid rgb(236, 181, 0);
+	box-shadow:0 0 10px rgb(255, 212, 95),
+	0 0 20px rgb(255, 225, 142),
+	0 0 30px rgb(255, 235, 180),
+	0 0 40px rgb(255, 246, 221),
+	0 0 60px rgb(255, 255, 255);
+	background:white;
+	background:rgb(236, 181, 0);
+	transform: scale(1.05,1.05);
+	}
+ 43%{
+	transition: 0.1s;
+	background:rgb(212, 169, 28);
+	box-shadow: 0 0 10px rgb(212, 169, 28),
+	0 0 20px rgb(212, 169, 28),
+	0 0 30px rgb(212, 169, 28),
+	0 0 40px rgb(212, 169, 28);
+	color:white;
+	border:1px solid rgb(236, 181, 0);
+	transform: scale(1,1);
+ }
+}
+body .slider__text{
+	font-family: 'Open Sans';
+	font-size: 20px;
+	line-height: 29px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #eee;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
