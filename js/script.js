@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	subscribe();
 	controlBtns('.control-btn', '.video3', 'control-btn_active');
 	dest();
-	oneSlider('.swiperImage', '.swiper-button-prev', '.swiper-button-next', '.swiperImgBlock', 'animated');
-	twoSlider('.slide', '.slider-button-prev', '.slider-button-next', '.newWrapper', 'activeSlide');
+	oneSlider('.swiperImage', '.swiper-button-prev', '.swiper-button-next', '.swiperImgBlock', 'animated', 'activeBtn', 'activeBtn2');
+	twoSlider('.slide', '.slider-button-prev', '.slider-button-next', '.newWrapper', 'activeSlide', 'activeBtn', 'activeBtn2');
 	menuBurger();
 	modal();
 	modalBtns('actived');

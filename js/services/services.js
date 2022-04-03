@@ -5,12 +5,14 @@ function enableScroll(elem) {
     window.scroll({ top: pagePosition, left: 0 });
     document.body.removeAttribute('data-position');
     document.querySelector('.mainMenu').style.display = '';
+
     elem.style.cssText = `
     background-color:rgba(0,0,0,0.999)!important;
 `
 }
 function disableScroll(elem) {
     let pagePosition = window.scrollY;
+    document.querySelector('.closeSymbol').classList.remove('closeBtnActive')
     document.body.classList.add('disable-scroll');
     document.body.dataset.position = pagePosition;
     document.body.style.top = -pagePosition + 'px';

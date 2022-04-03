@@ -98,5 +98,16 @@ body .slider__text{
     padding: 15px 0 0 0;
     margin: 0 0 50px 0;
 }	
-
+.activeBtn{
+	display: block;
+	transform: scale(1.1,1.1);
+	transform:translateX(5px);
+	
+}
+.activeBtn2{
+	display: block;
+	transform: scale(1.1,1.1);
+	transform:translateX(-5px);
+	
+}
 

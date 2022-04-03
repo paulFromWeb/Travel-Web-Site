@@ -1,4 +1,4 @@
-function oneSlider(img, btnPrev, btnNext, wrapper, decorate) {
+function oneSlider(img, btnPrev, btnNext, wrapper, decorate, decorateBtn, decorateBtn2) {
     // FIRST SLIDER 
 
     const getDataSlider = async function getData() {
@@ -21,16 +21,23 @@ function oneSlider(img, btnPrev, btnNext, wrapper, decorate) {
             }
             const imgArr = ['slide1', 'slide2', 'slide3']
 
-            next.addEventListener('click', () => {
+            next.addEventListener('click', (e) => {
+                console.log(e.target)
+                e.target.classList.add(decorateBtn);
                 document.querySelector(wrapper).classList.remove(decorate);
                 index = index + 1;
                 if (index === 3) {
                     index = 0;
                 }
+                setTimeout(() => {
+                    e.target.classList.remove(decorateBtn);
+                }, 500)
                 addAnimate(index);
+
             })
 
-            prev.addEventListener('click', () => {
+            prev.addEventListener('click', (e) => {
+                e.target.classList.add(decorateBtn2);
                 document.querySelector(wrapper).classList.remove(decorate);
                 if (index !== 0) {
                     index = index - 1;
@@ -40,6 +47,10 @@ function oneSlider(img, btnPrev, btnNext, wrapper, decorate) {
                     index = 2;
                     addAnimate(index);
                 }
+                setTimeout(() => {
+                    e.target.classList.remove(decorateBtn2);
+                }, 500)
+
             }
             )
         }

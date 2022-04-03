@@ -31,11 +31,12 @@
 	margin: 0px auto 10% auto;
 	width: 90%;
 	height: 100%;
-	display: block;
-	/* border:1px solid white !important; */
+	display: flex;
+align-items:center;
 	padding: 0 0 0 0 !important;
 	position: relative;
 }
+
  .slider-button-prev img {
 	width: 60px;
 	height: 60px;
@@ -43,8 +44,8 @@
 	font-size: 30px;
 	position: absolute;
 	z-index: 400;
-	top: 50%;
-	left: -10;
+	
+	left: -30;
 	cursor: pointer;	
 }
 .slider-button-next img {
@@ -54,15 +55,16 @@
 	font-size: 30px;
 	position: absolute;
 	z-index: 400;
-	top: 50%;
-	right: -10;
+	
+	right: -30;
+	
 	cursor: pointer;	
 }
 .newWrapper{
 	display: flex;
 	justify-content:space-around;
 	width: 100%;
-	height: 100%;
+
 	padding: 7% 1% 0 1%;
 }
 .slide{
@@ -76,24 +78,24 @@
 .ourThings__card1 {
 	width: 100%;
 	min-width: 0;
-	display: inline-flex;
+	
 	flex-direction: column;
-	justify-content: space-between;
+	
 	height: 100%;
 }
 .ourThings__card2{
 	min-width: 0;
-	display: inline-flex;
+	
 	flex-direction: column;
-	justify-content: space-between;
+
 	height: 100%;
 	width: 100%;
 }
 .ourThings__card3{
 	min-width: 0;
-	display: inline-flex;
+	
 	flex-direction: column;
-	justify-content: space-between;
+	
 	height: 100%;
 	width: 100%
 }

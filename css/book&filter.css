@@ -22,7 +22,7 @@
 }
 .line div{	
     width: 49.7%;
-    height: 5px;
+    height: 4px;
     display: block;
     background:rgba(255, 253, 253, 1);
 	position: relative;
@@ -37,6 +37,7 @@
 	top: 15%;
 	left: 27.5%;
 	z-index: 100;
+	min-height: 540px;
 	
 }
 .markers{
@@ -72,6 +73,7 @@
 	display: flex;
 	z-index:1050;
 	border-radius:15px;
+	min-height: 480px;
 }
 body .block2{
 	z-index: 1050;
@@ -149,7 +151,7 @@ body .start{
 }
 .content{
 	display: flex;
-	justify-content: space-around; 
+	justify-content: space-between; 
 	align-items: center;
 	flex-direction: column;
 	height: 50%;
@@ -164,6 +166,7 @@ body .start{
 	font-family: 'Oswald', sans-serif;
 	color:#ffffff;
 	font-size: calc(26px + (2 + 2 * 0.7) * ((100vw - 320px) / 1620));	
+	line-height: calc(26px + (2 + 2 * 0.7) * ((100vw - 320px) / 1620));
 }
 .bookNow p:nth-child(2){
 	display: block;
@@ -179,9 +182,9 @@ body .start{
 	font-weight: 300;
 	font-family: 'Oswald';
 	color:rgb(255, 255, 255);
-	line-height: 26px;
+	line-height: calc(18px + (8 + 8 * 0.7) * ((100vw - 320px) / 1620));	;
 	word-spacing: 2px;
-	font-size: 24px;
+	font-size: calc(18px + (8 + 8 * 0.7) * ((100vw - 320px) / 1620));	
 	margin: 0 32%;
 }
 .content button{
@@ -248,9 +251,10 @@ body .start{
 }
 
 .contBack{
-	/* border:1px solid red; */
 	display: block;
 	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 1041;
 	width: 100% !important;
 	height: 100%;
@@ -260,7 +264,6 @@ body .start{
 .contBack img{
 	pointer-events: auto;
 	width: 100% !important;
-	height: 100%;
 	opacity: 0.8;
 	object-fit: fill;
 }
@@ -412,4 +415,8 @@ body .start{
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+.closeBtnActive{
+	color:#fcad04;
+	
 }

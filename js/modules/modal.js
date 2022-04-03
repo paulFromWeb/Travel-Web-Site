@@ -70,7 +70,8 @@ function modal() {
     })
 
     contBack.addEventListener('click', (e) => {
-        if (e.target.classList.contains('contBackImg') || e.target.classList.contains('closeSymbol')) {
+        if (e.target.classList.contains('closeSymbol')) {
+            e.target.classList.add('closeBtnActive')
             enableScroll(div);
             deleteImg(div);
             document.querySelector('.mainMenu').style.display = 'flex';

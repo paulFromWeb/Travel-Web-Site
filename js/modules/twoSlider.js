@@ -1,10 +1,11 @@
-function twoSlider(mySlides, btnPrev, btnNext, wrapper, decorate) {
+function twoSlider(mySlides, btnPrev, btnNext, wrapper, decorate, decorateBtn, decorateBtn2) {
     // TWO SLIDER 
     const myNewSlider = function () {
         const slides = document.querySelectorAll(mySlides)
         activeMode();
 
-        document.querySelector(btnNext).addEventListener('click', () => {
+        document.querySelector(btnNext).addEventListener('click', (e) => {
+            e.target.classList.add(decorateBtn);
             slides.forEach(slide => {
                 slide.classList.remove(decorate)
             })
@@ -14,11 +15,13 @@ function twoSlider(mySlides, btnPrev, btnNext, wrapper, decorate) {
                 document.querySelector(wrapper).firstElementChild.remove();
                 document.querySelector(wrapper).appendChild(newElement);
                 activeMode()
+                e.target.classList.remove(decorateBtn);
             }, 400)
 
 
         })
-        document.querySelector(btnPrev).addEventListener('click', () => {
+        document.querySelector(btnPrev).addEventListener('click', (e) => {
+            e.target.classList.add(decorateBtn2);
             slides.forEach(slide => {
                 slide.classList.remove(decorate)
             })
@@ -27,6 +30,7 @@ function twoSlider(mySlides, btnPrev, btnNext, wrapper, decorate) {
                 document.querySelector(wrapper).lastElementChild.remove();
                 document.querySelector(wrapper).prepend(newElement);
                 activeMode2();
+                e.target.classList.remove(decorateBtn2);
             }, 400)
         })
 
