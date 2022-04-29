@@ -1,1 +1,117 @@
-.swiperImage{width:100%;height:100%;object-fit:cover;display:block;position:relative;animation-name:animeMove}.swiper-slide{height:100%}.swiper-slide .menu_btn{margin:2% 0 0 0;height:40px;width:40%}.swiper{position:absolute;z-index:56;position:relative;height:100%;display:block;width:100%;padding:2% 0 0 0}.swiper-wrapper{height:100% !important;display:block;width:100%}.swiperImgBlock{height:100% !important;width:100%}.swiper-button-prev img,.swiper-button-next img{width:60px;height:60px;font-size:30px;margin:0 0 0 10px;position:absolute;z-index:40;top:50%;cursor:pointer}.swiper-button-prev img{left:20px}.swiper-button-next img{right:20px}.swiperText{display:block;position:absolute;top:40%;left:20%;height:40%;width:40%;z-index:100}.firstText{font-family:'Playball', cursive;letter-spacing:1px;text-shadow:3px 2px 3px rgba(0,0,0,0.8);font-size:calc(36px + (40 + 36 * 0.7) * ((100vw - 320px) / 1620));line-height:calc(36px + (39 + 39 * 0.7) * ((100vw - 320px) / 1620));color:rgba(255,255,255,0.7);display:block}.secondText{font-family:'Open Sans';font-size:calc(32px + (13 + 13 * 0.7) * ((100vw - 320px) / 1620));line-height:75px;text-transform:uppercase;font-weight:700;color:#ffffff;display:block}.fishText{font-family:'Open Sans';font-size:14px;line-height:20px;font-weight:400;color:#ffffff;display:inline-block;text-align:justify}body .slider__text{width:100%;height:70px;padding:15px 0 0 0;margin:0 0 50px 0}.activeBtn{display:block;transform:scale(1.1, 1.1);transform:translateX(5px)}.activeBtn2{display:block;transform:scale(1.1, 1.1);transform:translateX(-5px)}
+.swiperImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  animation-name: animeMove;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+.swiper-slide .menu_btn {
+  margin: 2% 0 0 0;
+  height: 40px;
+  width: 40%;
+}
+
+.swiper {
+  position: absolute;
+  z-index: 56;
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 100%;
+  padding: 2% 0 0 0;
+}
+
+.swiper-wrapper {
+  height: 100% !important;
+  display: block;
+  width: 100%;
+}
+
+.swiperImgBlock {
+  height: 100% !important;
+  width: 100%;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin: 0 0 0 10px;
+  position: absolute;
+  z-index: 40;
+  top: 50%;
+  cursor: pointer;
+}
+
+.swiper-button-prev img {
+  left: 20px;
+}
+
+.swiper-button-next img {
+  right: 20px;
+}
+
+.swiperText {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  height: 40%;
+  width: 40%;
+  z-index: 100;
+}
+
+.firstText {
+  font-family: 'Playball', cursive;
+  letter-spacing: 1px;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.8);
+  font-size: calc(36px + (40 + 36 * 0.7) * ((100vw - 320px) / 1620));
+  line-height: calc(36px + (39 + 39 * 0.7) * ((100vw - 320px) / 1620));
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.secondText {
+  font-family: 'Open Sans';
+  font-size: calc(32px + (13 + 13 * 0.7) * ((100vw - 320px) / 1620));
+  line-height: 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+}
+
+.fishText {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  text-align: justify;
+}
+
+body .slider__text {
+  width: 100%;
+  height: 70px;
+  padding: 15px 0 0 0;
+  margin: 0 0 50px 0;
+}
+
+.activeBtn {
+  display: block;
+  transform: scale(1.1, 1.1);
+  transform: translateX(5px);
+}
+
+.activeBtn2 {
+  display: block;
+  transform: scale(1.1, 1.1);
+  transform: translateX(-5px);
+}
