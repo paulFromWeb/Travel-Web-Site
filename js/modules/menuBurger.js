@@ -31,11 +31,11 @@ function menuBurger() {
             myDelete.style.opacity = '0';
             matIcons1.style.cssText = `
             transform :rotate(45deg);
-            top:12;
+            top:12.5px;
             `;
             matIcons2.style.cssText = `
             transform :rotate(-45deg);
-            bottom:13.5;
+            top:12.5px;
             `;
         }
     });

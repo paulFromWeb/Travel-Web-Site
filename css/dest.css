@@ -26,30 +26,49 @@
   animation-duration: 1s;
 }
 
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
 @keyframes anime {
   0% {
     opacity: 0;
     color: rgba(255, 255, 255, 0);
   }
+
   100% {
     opacity: 1;
     color: white;
   }
 }
+
 .animated {
   animation-name: animeted;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+  animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes animeted {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .blockWrapperElem2 {
   padding: 5% 0 0 0;
   background: rgba(255, 255, 255, 0.021);

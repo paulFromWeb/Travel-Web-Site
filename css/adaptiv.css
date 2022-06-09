@@ -2,12 +2,14 @@
   .menu img {
     width: calc(140px + 32 * (100vw / 1620));
   }
+
   .menu p {
     font-size: calc(14px + 6 * (100vw / 1620));
     word-spacing: calc(10px + 25 * (100vw / 1620));
     margin: auto 0;
   }
 }
+
 @media (max-width: 767px) {
   .footer {
     display: flex;
@@ -19,6 +21,7 @@
     margin: 0 4% 10% 4% !important;
     text-align: justify !important;
   }
+
   .footerElem p {
     text-align: justify !important;
   }
@@ -60,6 +63,7 @@
     height: 35px;
     width: 35px;
   }
+
   .markers div:after {
     content: '' !important;
     display: none !important;
@@ -70,13 +74,16 @@
     height: 100%;
     padding: 25% 5%;
   }
+
   .block_right input {
     font-size: 18px;
     width: 45%;
   }
+
   .block_right p:nth-child(1) {
     font-size: 34px;
   }
+
   .block_right button {
     margin: 3% 3% 0 3%;
     width: 40%;
@@ -144,12 +151,14 @@
   .info {
     width: 100% !important;
     display: block;
-    height: 60%;
+
     margin: 0 0 0 0;
   }
+
   .info p:nth-child(1) {
     width: 100%;
   }
+
   .info p:nth-child(3) {
     font-size: 14px;
     line-height: 18px;
@@ -205,6 +214,7 @@
     margin: 10% 0% 0% 0%;
     width: 100%;
     height: 50%;
+    max-height: 250px;
   }
 
   .blockWrapperElem {
@@ -219,6 +229,7 @@
     height: 65%;
     border-radius: 5px;
   }
+
   .infoAboutCity .priceButton {
     font-size: 16px;
     width: 50%;
@@ -230,8 +241,7 @@
 
   .destination {
     margin: 0 3% 5% 3%;
-    height: 80%;
-    padding: 30% 0 0 0;
+    padding: 30% 0 30% 0;
   }
 
   .feedbackElem {
@@ -249,6 +259,7 @@
   .feedbackElem__left {
     border-radius: 10px 0 0 10px !important;
   }
+
   .feedbackElem__left img {
     object-fit: cover;
     height: 100%;
@@ -286,11 +297,13 @@
   .newSlider .swiper-slide button {
     width: 50% !important;
   }
+
   .newSlider .swiper-button-prev:after {
     color: white;
     font-size: 30px;
     margin: 0 30px 0 0;
   }
+
   .newSlider .swiper-button-next:after {
     color: white;
     font-size: 30px;
@@ -303,6 +316,7 @@
     opacity: 1;
     padding: 0 auto;
   }
+
   .ourThings .swiper-slide {
     margin: 2% 0 0 0 !important;
     height: 100% !important;
@@ -345,6 +359,7 @@
 
   .newWrapper {
     padding: 0% !important;
+    height: 80%;
   }
 
   .slide {
@@ -358,6 +373,7 @@
     animation-timing-function: ease-in;
     opacity: 1;
   }
+
   body .menuFlex {
     display: flex;
     flex-direction: column;
@@ -367,18 +383,37 @@
     line-height: 2;
     font-size: 36px !important;
   }
+
   body .mainMenuActive {
     height: 100% !important;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
+
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+      transform: translateZ(-80px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
   body .material-icons1,
   body .material-icons2 {
     position: absolute;
     z-index: 3;
     transform: rotate(0);
   }
+
   body .material-icons1 {
     top: 0;
   }
+
   body .material-icons2 {
     bottom: 0;
   }
@@ -405,6 +440,7 @@
     position: relative;
     cursor: pointer;
   }
+
   .menuIcon span {
     display: block;
     width: 30px;
@@ -435,15 +471,17 @@
     top: 30px;
     left: 20px;
   }
+
   .menu a:hover:after {
     content: '';
     display: none !important;
   }
 }
+
 @media (max-width: 1000px) {
   .newSlider {
     margin: 0 auto !important;
-    width: 50% !important;
+
     padding: 0 5% 0 5% !important;
   }
 
@@ -461,6 +499,7 @@
     cursor: pointer;
     z-index: 2000;
   }
+
   .menuIcon span {
     display: block;
     width: 30px;
@@ -490,11 +529,13 @@
       opacity: 0;
       transform: scale(0.9, 0.9);
     }
+
     100% {
       opacity: 1;
       transform: scale(1, 1);
     }
   }
+
   .menu p {
     font-size: calc(14px + 6 * (100vw / 1620));
     word-spacing: 3%;
@@ -514,6 +555,7 @@
     margin: 10px 0 0 0 !important;
   }
 }
+
 @media (max-width: 1500px) {
   .ourThings {
     margin: 0;
